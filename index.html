@@ -1,0 +1,93 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"></link>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+
+<!-- bu satıra  yukarıdaki içe aktarmaları ekle  -->
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+<!-- normal script aktarmaları vb  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>    
+<script src="index.js"></script>  
+    
+<!-- bu satıra içe aktarıldıktan sonra ekle ekle -->
+<script>if (window.module) module = window.module;</script>    
+
+</head> 
+<body>
+<div class="container">
+<br>
+<h1>Binance OCO</h1>
+<br>
+<br>
+<div clas="card-body">
+<div class="row">
+    <div class="col-sm-10">
+        <table class="table table-borderless">
+        <tbody>
+        <tr><td ><h6>Binance API Key:</h6></td><td><input type="password" id="binanceapikey"></td></tr>
+        <tr><td ><h6>Binance Secret Key:</h6></td><td><input type="password" id="binanceseckey"></td></tr>
+        <tr><td ><h6>Sembol:</h6></td><td><select class="col-sm-4" id="symbol"></select></td></tr>
+        <tr><td ><h6>Miktar:</h6></td><td><input class="col-sm-3"  type="text" id="qty"></td></tr>
+        <tr><td ><h6>Kâr Fiyat:</h6></td><td><input class="col-sm-3"  type="text" id="profitprice"></td></tr>
+        <tr><td ><h6>Stop-Loss Fiyat:</h6></td><td><input class="col-sm-3"  type="text" id="stoplossprice"></td></tr>
+        <tr><td ><h6>Tercih:</h6></td><td><select class="col-sm-4" id="preference"><option value="1">Kârı Al</option><option value="2">Zararı Durdur</option></select></td></tr>
+        <tr><td ><h6>Toggle:</h6></td><td><input id="botSwitch" data-onstyle="success" data-offstyle="warning" data-size="small" type="checkbox" data-toggle="toggle"></td></tr>
+        <tr><td ><h6>Form:</h6></td><td><div id="formstatus"><h4>Off</h4></div></td></tr>
+        <tr><td ><h6>Kâr Statusu Al:</h6></td><td><div id="tpstatus" class="row"></div></td></tr>
+        <tr><td ><h6>Zararı Durdur:</h6></td><td><div id="slstatus" class="row"></div></td></tr>
+        </tbody>	
+        </table>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+    <button onclick="saveSettings();" type="button" class="btn btn-danger" >Kaydet</button>
+    <button onclick="loadSettings();" type="button" class="btn btn-success" >Kaydedileni Yükle</button>
+</div>  
+</div>
+</div>
+</body>
+<script>
+sembolYukle();
+
+$("#botSwitch").change(function(){
+    if(document.getElementById("botSwitch").checked){//acik
+        performInputValidation();
+        disableInputFields();
+    }
+    else{//kapali
+        enableInputFields();
+    }
+});
+    function sembolYukle(){
+        request('GET','https://api.binance.com/api/v3/ticker/price').then((r1) => {
+           var lv_markup="";
+           var lv_r1Respons = JSON.parse(r1.target.responseText);
+           for(i=0;i<lv_r1Respons.length;i++){
+               lv_markup += "<option value=" + lv_r1Respons[i]["symbol"] + ">" + lv_r1Respons[i]["symbol"]  + "</option>";
+           }
+           $('select[id="symbol"]').append(lv_markup);
+
+        }).catch((err) => {
+            console.log(err);
+        });
+    }
+
+    function request(method, url){
+        return new Promise (function(resolve, reject){
+            var xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            xhr.onload = resolve;
+            xhr.onerror = reject;
+            xhr.send();
+        });
+    }
+</script>
+</html>

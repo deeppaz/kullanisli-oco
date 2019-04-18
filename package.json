@@ -1,0 +1,17 @@
+{
+  "name": "ocoformbinance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "jimmy_sensei",
+  "license": "ISC",
+  "dependencies": {
+    "binance": "^1.3.3",
+    "electron": "^4.1.4"
+  }
+}
