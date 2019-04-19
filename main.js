@@ -11,8 +11,8 @@ function createWindow () {
   // ve uygulamanın index.html'sini yükle.
   win.loadFile('index.html')
 
-  // Open the DevTools.
-  win.webContents.openDevTools()
+  // Open the DevTools
+  //win.webContents.openDevTools()
 
   // Pencere kapatıldığında ortaya çıkar.
   win.on('closed', () => {

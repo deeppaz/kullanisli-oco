@@ -7,14 +7,14 @@
 <!-- bu satıra  yukarıdaki içe aktarmaları ekle  -->
 <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
-<!-- normal script aktarmaları vb  -->
+<!-- normal script aktarmaları vb -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>    
 <script src="index.js"></script>  
     
-<!-- bu satıra içe aktarıldıktan sonra ekle ekle -->
+<!-- bu satıra içe aktarıldıktan sonra ekle -->
 <script>if (window.module) module = window.module;</script>    
 
 </head> 
@@ -48,22 +48,46 @@
 <br>
 <br>
 <div class="container">
-    <button onclick="saveSettings();" type="button" class="btn btn-danger" >Kaydet</button>
-    <button onclick="loadSettings();" type="button" class="btn btn-success" >Kaydedileni Yükle</button>
+    <button onclick="ayarlariKaydet();" type="button" class="btn btn-danger" >Kaydet</button>
+    <button onclick="kAyarlariYukle();" type="button" class="btn btn-success" >Kaydedileni Yükle</button>
 </div>  
 </div>
 </div>
 </body>
 <script>
+var sj_trade={};
+
 sembolYukle();
 
 $("#botSwitch").change(function(){
     if(document.getElementById("botSwitch").checked){//acik
-        performInputValidation();
+        girisDogrulamasiGerceklestir();
         disableInputFields();
+
+        //giris alanlarini yakala
+        sj_trade["apikey"] = document.getElementById("binanceapikey").value;
+        sj_trade["seckey"] = document.getElementById("binanceseckey").value;
+        sj_trade["symbol"] = document.getElementById("symbol").value;
+        sj_trade["qty"] = parseFloat(document.getElementById("qty").value);
+        sj_trade["profitprice"] = parseFloat(document.getElementById("profitprice").value);
+        sj_trade["stoplossprice"] = parseFloat(document.getElementById("stoplossprice").value);
+        var lv_den = sj_trade["symbol"].substring(sj_trade["symbol"].length-3,sj_trade["symbol"].length);    
+        if(lv_den == "SDT"){
+            sj_trade["num"] = sj_trade["symbol"].substring(0,sj_trade["symbol"].length-4);
+            sj_trade["den"] = sj_trade["symbol"].substring(sj_trade["symbol"].length-4,sj_trade["symbol"].length);
+         }
+         else{
+            sj_trade[lv_id]["num"] = sj_trade["symbol"].substring(0,sj_trade["symbol"].length-3);
+            sj_trade[lv_id]["den"] = sj_trade["symbol"].substring(sj_trade["symbol"].length-3,sj_trade["symbol"].length);
+         }    
+        sj_trade["preference"] = document.getElementById("preference").value;
+
+        ilkSiparis(); //limit emri yeri veya stop-limit emri yeri
+        sj_checkstatus = setInterval(suankiDurumKontrol,1*1000);
     }
     else{//kapali
         enableInputFields();
+        clearInterval(sj_checkstatus);
     }
 });
     function sembolYukle(){
