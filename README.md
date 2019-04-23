@@ -32,8 +32,11 @@ Bir çok değişkenin varlığın değerini etkilediği böylesine bir piyasada 
 
 
 `$ git clone https://github.com/deeppaz/kullanisli-oco.git`
+
 `$ cd kullanisli-oco`
+
 `$ npm install`
+
 `$ npm start`
 
 
