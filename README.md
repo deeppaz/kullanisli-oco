@@ -46,8 +46,11 @@ Bir çok değişkenin varlığın değerini etkilediği böylesine bir piyasada 
 ##Yapılandırma (Underline)
 
 - API merkezine git (https://www.binance.com/userCenter/createApi.html)
-                                                             (YENI BIR ANAHTAR OLUSTUR)
+##Su adımları -->
 - Create New Key ✅ 
 - Read Info ✅ 
 - Enable Trading ✖ 
 - Enable Withdrawals ✅
+- API Key ve API Secret Key form'daki gerekli yerleri yapıştır
+
+![BOL SANS](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fworldartsme.com%2Fimages%2Fgood-luck-animated-clipart-1.jpg&f=1)
