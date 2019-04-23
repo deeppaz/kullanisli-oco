@@ -53,4 +53,5 @@ bu formu kullandığınız andan itibaren tüm sorumluluklar üstünüzedir. bu 
 - Enable Withdrawals ✅
 - API Key ve API Secret Key form'daki gerekli yerlere yapıştır
 
-
+####ULASABILIRSINIZ:
+- ![](https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/mail-256.png) [Link](deeppaz@hotmail.com)
