@@ -54,4 +54,4 @@ bu formu kullandığınız andan itibaren tüm sorumluluklar üstünüzedir. bu 
 - API Key ve API Secret Key form'daki gerekli yerlere yapıştır
 
 ####ULASABILIRSINIZ:
-- ![](http://icons.iconarchive.com/icons/iconsmind/outline/32/Mail-icon.png) [MAIL](mail:deeppaz@hotmail.com)
+- ![](http://icons.iconarchive.com/icons/iconsmind/outline/48/Mail-icon.png) *deeppaz@hotmail.com*
