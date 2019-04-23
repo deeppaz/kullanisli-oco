@@ -53,5 +53,5 @@ bu formu kullandığınız andan itibaren tüm sorumluluklar üstünüzedir. bu 
 - Enable Withdrawals ✅
 - API Key ve API Secret Key form'daki gerekli yerlere yapıştır
 
-####ULASABILIRSINIZ:
+##ULASABILIRSINIZ:
 - ![](http://icons.iconarchive.com/icons/iconsmind/outline/48/Mail-icon.png) *deeppaz@hotmail.com*
