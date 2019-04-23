@@ -43,15 +43,17 @@ bu formu kullandığınız andan itibaren tüm sorumluluklar üstünüzedir. bu 
 ![1](http://i67.tinypic.com/ib9ug0.png)
 
 
-##Yapılandırma (Underline)
+### Yapılandırma (Underline)
 
 - API merkezine git (https://www.binance.com/userCenter/createApi.html)
-##Su adımları -->
+
+### Su adımları -->
+
 - Create New Key ✅ 
 - Read Info ✅ 
 - Enable Trading ✖ 
 - Enable Withdrawals ✅
 - API Key ve API Secret Key form'daki gerekli yerlere yapıştır
 
-##ULASABILIRSINIZ:
+### ULASABILIRSINIZ:(Underline)
 - ![](http://icons.iconarchive.com/icons/iconsmind/outline/48/Mail-icon.png) *deeppaz@hotmail.com*
