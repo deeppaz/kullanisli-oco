@@ -54,4 +54,4 @@ bu formu kullandığınız andan itibaren tüm sorumluluklar üstünüzedir. bu 
 - API Key ve API Secret Key form'daki gerekli yerlere yapıştır
 
 ####ULASABILIRSINIZ:
-- ![](https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/mail-256.png) [Link](deeppaz@hotmail.com)
+- ![](http://icons.iconarchive.com/icons/iconsmind/outline/32/Mail-icon.png) [MAIL](mail:deeppaz@hotmail.com)
