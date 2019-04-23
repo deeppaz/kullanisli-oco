@@ -43,7 +43,7 @@ bu formu kullandığınız andan itibaren tüm sorumluluklar üstünüzedir. bu 
 ![1](http://i67.tinypic.com/ib9ug0.png)
 
 
-### Yapılandırma (Underline)
+### Yapılandırma
 
 - API merkezine git (https://www.binance.com/userCenter/createApi.html)
 
@@ -55,5 +55,5 @@ bu formu kullandığınız andan itibaren tüm sorumluluklar üstünüzedir. bu 
 - Enable Withdrawals ✅
 - API Key ve API Secret Key form'daki gerekli yerlere yapıştır
 
-### ULASABILIRSINIZ:(Underline)
+### ULASABILIRSINIZ:
 - ![](http://icons.iconarchive.com/icons/iconsmind/outline/48/Mail-icon.png) *deeppaz@hotmail.com*
