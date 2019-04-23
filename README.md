@@ -43,4 +43,11 @@ Bir çok değişkenin varlığın değerini etkilediği böylesine bir piyasada 
 ![1](http://i67.tinypic.com/ib9ug0.png)
 
 
+##Yapılandırma (Underline)
 
+- API merkezine git (https://www.binance.com/userCenter/createApi.html)
+                                                             (YENI BIR ANAHTAR OLUSTUR)
+- Create New Key ✅ 
+- Read Info ✅ 
+- Enable Trading ✖ 
+- Enable Withdrawals ✅
