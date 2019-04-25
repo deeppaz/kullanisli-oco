@@ -26,7 +26,9 @@ bu formu kullandığınız andan itibaren tüm sorumluluklar üstünüzedir. bu 
 
 > Bir çok değişkenin varlığın değerini etkilediği böylesine bir piyasada OCO gibi emirler hayat kurtarır!"
 
-**ALINTI!!** yazı kaynağı: https://koinmedya.com/2018/10/12/binance-borsasindan-bir-yenilik-daha-binance-oco-planliyor-oco-nedir/
+> **ALINTI!!** yazı kaynakları: 
+[kaynak1](http://www.yardimcikaynaklar.com/digerini-iptal-emir-oco-order-cancels-other-nedir/)
+[kaynak2](https://koinmedya.com/2018/10/12/binance-borsasindan-bir-yenilik-daha-binance-oco-planliyor-oco-nedir/)
 
 ### NASIL KULLANIRIM?
 
@@ -43,11 +45,11 @@ bu formu kullandığınız andan itibaren tüm sorumluluklar üstünüzedir. bu 
 ![1](http://i67.tinypic.com/ib9ug0.png)
 
 
-### Yapılandırma
+### YAPINLANDIRMA
 
 - API merkezine git (https://www.binance.com/userCenter/createApi.html)
 
-### Su adımları -->
+### SU ADIMLARI -->
 
 - Create New Key ✅ 
 - Read Info ✅ 
