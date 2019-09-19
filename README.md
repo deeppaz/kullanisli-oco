@@ -1,6 +1,5 @@
 
 #### Binance OCO Hosgeldin
-![Welcome to Altyum!](http://i64.tinypic.com/2web9ec.pn)
 
 ### **ONEMLI!:**
 
