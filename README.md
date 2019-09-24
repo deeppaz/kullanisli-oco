@@ -41,7 +41,6 @@ bu formu kullandığınız andan itibaren tüm sorumluluklar üstünüzedir. bu 
 `$ npm start`
 
 
-![1](http://i67.tinypic.com/ib9ug0.png)
 
 
 ### YAPINLANDIRMA
