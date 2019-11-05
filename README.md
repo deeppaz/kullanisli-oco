@@ -1,5 +1,5 @@
 
-#### Binance OCO Hosgeldin
+#### Binance OCO(Order Cancel Order) Hosgeldin
 
 ### **ONEMLI!:**
 
