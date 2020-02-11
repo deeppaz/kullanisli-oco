@@ -49,10 +49,10 @@ bu formu kullandığınız andan itibaren tüm sorumluluklar üstünüzedir. bu 
 
 ### SU ADIMLARI -->
 
-- Create New Key ✅ 
-- Read Info ✅ 
-- Enable Trading ✖ 
-- Enable Withdrawals ✅
+- Create New Key 
+- Read Info 
+- Enable Trading 
+- Enable Withdrawals 
 - API Key ve API Secret Key form'daki gerekli yerlere yapıştır
 
 ### ULASABILIRSINIZ:
